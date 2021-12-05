@@ -1,0 +1,341 @@
+@font-face {
+    font-family: pixel;
+    src: url(./src/Windows\ Regular.ttf);
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: pixel;
+    background-color: #CEC6ED;
+}
+
+
+.modal-open{
+    padding: 8px;
+}
+
+.modal, .modal-sm, .modal-lg{
+    position: fixed;
+ 
+  left: 10%;
+  top:0;
+
+  right: 0;
+  bottom: 0;
+    z-index: 2;
+    display: none;
+    animation: modal-open .5s;
+    width: 100% !important;
+    height: 100% !important;
+    background: transparent;
+    
+}
+
+
+
+.modal, .modal-sm, .modal-lg {
+    -webkit-transform: translateX(0%) translateY(25%) !important;
+    -moz-transform: translateX(0%) translateY(25%) !important;
+    -ms-transform: translateX(0%) translateY(25%) !important;
+    transform: translateX(0%) translateY(25%) !important;
+}
+.modal-backdrop {
+     display: none !important;
+}
+
+.modal-content {
+    
+    box-shadow: 7px 6px 13px -6px rgba(0,0,0,0.8);
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:4;
+    border-radius: 0 !important;
+    background-color: rgb(191, 191, 191);
+    
+}
+#modal2>.modal-body{
+    width:190px;
+    height: 190px;
+    margin: auto;
+}
+.modal-body{
+    background-color: rgb(191, 191, 191);
+    
+
+}
+.modal-header{
+   padding: 2px;
+   background: linear-gradient(225deg, rgba(64,62,101,1) 0%, rgba(206,198,237,1) 62%);
+   height: 20px;
+  color: white;
+  margin: 2px;
+  border-radius: 0 !important;
+}
+
+.modal-close{ 
+    float: right;
+    position: relative;
+
+    background-color:transparent;
+ border:none;
+}
+
+.material-icons{
+    font-size: 13px;
+    background-color: rgb(191, 191, 191);
+    position: relative;
+    top: 2px;
+    margin: 2px;
+    border-right: black solid 2px;
+    border-bottom: black solid 2px;
+    border-left: rgb(191, 191, 191) solid 2px;
+    border-top: rgb(191, 191, 191) solid 2px;
+}
+
+
+.modal-body{
+    border-right: black solid 2px;
+    border-bottom: black solid 2px;
+    border-left: rgb(191, 191, 191) solid 2px;
+    border-top: rgb(191, 191, 191) solid 2px;
+    padding: 5px 0;
+    
+}
+.modal>div{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    }
+
+.modal-text, .worklink, .work-tabs, .tabcontent, .contactform, p, h4, img, .sm-icn, .workdisplay, a{
+    background-color: white;
+    margin: 10px;
+}
+
+.modal-text{
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+    border-right: rgb(191, 191, 191) solid 2px;
+    border-bottom: rgb(191, 191, 191) solid 2px;
+}
+.modal-footer{
+    padding:15px 0;
+}
+
+.modal-footer .modal-close{
+    padding:9px 16px;
+}
+
+
+#work-icn, #email-icn, #about-icn{
+width: 15%;
+background-color: transparent;
+margin:0;
+padding: 0;
+}
+
+.left-btns>button{
+border: none;
+background-color: transparent;
+background-size: 40px 40px;
+height: 40px;  
+width: 40px;
+margin-bottom:6px;
+}
+
+.left-btns{
+ 
+    margin: 30px;
+}
+
+
+.left-btns>span{
+    position: relative;
+    
+    color: white;
+}
+.left-btns-inside{
+    height: 134px;  
+    width: 120px;
+    margin: -20px;  
+}
+
+.bottom-menu{
+    display: flex;
+    flex-direction: row;
+    border: #e3e8e5;
+    background-color: rgb(191, 191, 191);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding:12px;
+    height: 50px;
+
+    box-shadow: 0px -1px 18px -3px rgba(0,0,0,0.5);
+    border: #e3e8e5 solid 2px;
+}
+
+.bottom-menu > #currenthour{
+    position: absolute;
+    right: 38px;
+    bottom: 6px;
+    background-color: #C5C0C5;
+}
+
+.bottom-menu>button{
+    background-color: rgb(191, 191, 191);
+    width: max-content;
+    height: max-content;
+    position: relative;
+    top: -8px;
+  
+
+}
+
+.main-left>a{
+    background-color: rgb(191, 191, 191);
+    color: black;
+}
+
+.main-left>a:hover{
+    background-color:  #0C0080;
+    color: white;
+ width: 100%;
+}
+
+.sub-programs{
+    visibility: hidden;
+    position: relative;
+    margin-left: 80px;
+    top: -10px;
+    z-index: 800;
+}
+
+li:hover > .sub-programs{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+#startingmenu>img{
+    background-color: rgb(191, 191, 191);
+
+   margin: 0;
+}
+.left-btns{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu{
+    position:absolute;
+    background-color: #C5C0C5;
+    display: none;
+bottom: 34px;
+    padding: 20px;
+    box-shadow: 9px -7px 19px -6px rgba(0,0,0,0.45);
+    width:max-content;
+}
+ul>li{
+    list-style: none;
+    background-color: #C5C0C5;
+   
+    
+}
+#menuBtm{
+    background-color: #C5C0C5;
+}
+
+#inta-icn, #lkd-icn, #gh-icn{
+    width: 50%;
+}
+
+.modal-text{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.sm-icn>a{
+    display: flex;
+    flex-direction: column;
+    margin-right: -15px;
+    padding:5px;
+}
+
+.contactform{
+text-align: center;
+vertical-align: text-top;
+}
+
+.work-tabs{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-right: black solid 0.5px;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.work-tabs button.active{
+    background-color:#C5C0C5;
+}
+
+.tabcontent {
+    display: none;
+    border: none;
+  }
+
+
+  .work-tabs>button{
+    border: none;
+    background-color: transparent;
+   
+  }
+
+  #Weather>img{
+    width: 100%;
+    
+}
+
+
+#currenthour{
+    border-top: black solid 1px;
+    border-left: black solid 1px;
+    border-right: rgb(191, 191, 191) solid 1px;
+    border-bottom: rgb(191, 191, 191) solid 1px;
+    padding: 4px;
+}
+
+span:hover, .modal-open:hover{
+  
+    opacity: 75%;
+    padding: -10px;
+}
+
+.menu-icon-global:hover{
+    background-color: #0C0080;
+}
+
+.menu-icon-global{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#modal2{
+  
+    left: 100px;
+    top: 100px;
+}
+
+#modal1{
+   left: 150px; 
+   top: 58px;
+}
+
+
